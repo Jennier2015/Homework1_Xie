@@ -1,0 +1,54 @@
+---
+title: "Homework 1"
+author: "Jenny"
+date: "September 4, 2016"
+output: html_document
+---
+
+# 1.8 (a) Each row represents a single person or case. For example, the first row represents Female 1, who is 42 years old. She is single and her gross income is under 2,600 British Pound. She smokes 12 cigarettes per day on weekends, and 12 cigarettes per day on weekdays.
+##     (b) There are 1691 participants were included in the survey.
+##     (c) sex - categorical - ordinal
+##         age - numerical - discrete
+##         marital - categorical - ordinal
+##         grossIncome - numerical - discrete
+##         smoke - categorical - ordinal 
+##         amtWeekends - numerical - discrete
+##         amtWeekdays - numerical - discrete
+
+## 1.10 (a) The population of interest in this study are all children between the ages of 5 and 15. The sample is this study are 160 children between the ages of 5 and 15.
+##      (b) When we sample from a population, we need to seek to randomly select a sample. If the researcher only pick the girls or boys, this introduces bias into the sample. In that case, the results of the study cannot be generalized to the population, and the findings of the study cannot be used to establish causal relationships. We would have to know how the samples were picked.
+
+## 1.28 (a) We cannot conclude yet that smoking causes dementia later in life. Based on this study, we can only say that smoking and dementia are associated. There might be a confounding variables like work stress that we are not considering. 
+##      (b) The statement that "The study shows that sleep disorders lead to bullying in school children" is not justified, because association doesn't necessarily mean cassation. The better conclusion from this study would be that the bullies are associated with sleep disorders. 
+
+## 1.36 (a) The study is a randomized experiment. 
+##      (b) Treatment group are the subjects that were instructed to exercise, and the control group are the subjects that were not instructed to exercise.
+##      (c) Yes, the blocking variable is age. The researcher randomly sampled the representative proportions of 18-30, 31-40 and 41-55 year olds from the population.
+##      (d) No, the blinding is not being used in this study.
+##      (e) Since this is an experiment, we can make a causal statement. However, since the sample is not random, the causal statement cannot be generalized to the population at large.
+##      (f) I think it's a good idea to utilize blocking in this study. Besides age, I think the original exercise habit is also a factor to affect the study results. If a person already have a regular exercise habit before participating the research, mostly likely the exercise wouldn't affect too much mental health improvement. On the other hand, it seems like the exercise would improve more menatl health on a person with no exercise habit at all.
+
+## 1.48 
+```{r include = TRUE}
+
+x <- c(57, 66, 69, 71, 72, 73, 74, 77, 78, 78, 79, 79, 81, 81, 82, 83, 83, 88, 89, 94)
+library(ggplot2)
+boxplot(x)
+library(ggplot2)
+```
+
+## 1.50 (a) Data sets (a) are symmetric and unimodal. It matches with (2).
+##      (b) Data distribution are more even in Data Set (b). It matches with (3).
+##      (C) Data set (c) is right skewed. It matches with (1).
+
+## 1.56 (a) The distribution of data set is expected to be right skewed, since "there are a meaningful number of houses that cost more than $6,000,000". Median would better represent a typical observation in the data than mean, and IQR would better represent data set than standard deviation.
+##      (b) The distribution of data set is expected to be symmetric. Mean and standard deviation would better represent a typical observation in the data.
+##      (c) The distribution of data set is expected to be right skewed, since only a few drink excessively. Median and IQR would better represent the data set. 
+##      (d) The distribution of data set is expected to be right skewed, since only a few high level executives earn much higher salaries than the all other employees. So median and IQR would better represent the data set.
+
+## 1.70 (a) Based on the mosaic plot, there is a association between the survival time and treatment, which suggests that the two variables are not independent.
+##      (b) Based on the boxplot, there is a obvious increase in survival time
+##      (c) In the treatment group, approximately 2/3 of the group died. And in the control group, approximately 7/8 of the group died.
+##      (d) i. The claims that being tested are "The group that having heart transplant leads to greater survival time"; or the transplant won't affect survival time.
+##          ii. the number of; the same number of; treatment group; control group; 0; greater than the observed differences.
+##          iii. Based on the results, it seems like the transplant have an effect on survival time.
